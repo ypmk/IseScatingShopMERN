@@ -37,7 +37,7 @@ export const POST = async (req: NextRequest) => {
 
     } catch (err){
         console.log("[collections_POST]", err)
-        return new NextResponse("Interval Server Error", {status:500})
+        return new NextResponse("Внутренняя ошибка сервера", {status:500})
     }
 }
 
@@ -51,6 +51,6 @@ export const GET =  async (req: NextRequest) => {
 
     } catch(err){
         console.log("[collections_GET", err)
-        return new NextResponse("Internal Server Error", {status:500})
+        return new NextResponse("Внутренняя ошибка сервера", {status:500})
     }
 }
